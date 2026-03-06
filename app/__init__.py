@@ -18,7 +18,7 @@ def create_app():
     migrate.init_app(app, db)
     CORS(app)
     
-    from app.routes import auth, users, workers, categories, jobs, payments, reviews, sync, sms, ussd
+    from app.routes import auth, users, workers, categories, jobs, payments, reviews, sync, sms, ussd, verification, notifications, job_updates
     
     app.register_blueprint(auth.bp)
     app.register_blueprint(users.bp)
@@ -30,5 +30,8 @@ def create_app():
     app.register_blueprint(sync.bp)
     app.register_blueprint(sms.bp)
     app.register_blueprint(ussd.bp)
+    app.register_blueprint(verification.bp)
+    app.register_blueprint(notifications.bp)
+    app.register_blueprint(job_updates.bp)
     
     return app
