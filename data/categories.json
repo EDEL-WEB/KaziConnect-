@@ -1,0 +1,309 @@
+{
+  "categories": [
+    {
+      "id": "home-maintenance",
+      "name": "Home Maintenance & Repair",
+      "icon": "🏠",
+      "offline_available": true,
+      "revenue_potential": "High",
+      "ml_priority": "high",
+      "subcategories": [
+        {
+          "id": "plumbing",
+          "name": "Plumbing",
+          "offline_available": true,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Licensed Plumber",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 500, "max": 1500, "currency": "KES"},
+              "demand_score": 9
+            },
+            {
+              "type": "Plumbing Assistant",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 300, "max": 800, "currency": "KES"},
+              "demand_score": 7
+            }
+          ],
+          "services": [
+            {
+              "name": "Pipe Repair",
+              "offline_available": true,
+              "avg_price": {"min": 1000, "max": 5000, "currency": "KES"},
+              "duration_hours": {"min": 1, "max": 4},
+              "urgency_level": "high",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": true,
+                "repeat_customer_rate": 0.65
+              }
+            },
+            {
+              "name": "Drain Cleaning",
+              "offline_available": true,
+              "avg_price": {"min": 800, "max": 3000, "currency": "KES"},
+              "duration_hours": {"min": 1, "max": 3},
+              "urgency_level": "medium",
+              "ml_features": {
+                "seasonal_demand": true,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.45
+              }
+            },
+            {
+              "name": "Water Heater Installation",
+              "offline_available": true,
+              "avg_price": {"min": 3000, "max": 10000, "currency": "KES"},
+              "duration_hours": {"min": 2, "max": 6},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.15
+              }
+            }
+          ]
+        },
+        {
+          "id": "electrical",
+          "name": "Electrical",
+          "offline_available": true,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Licensed Electrician",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 600, "max": 2000, "currency": "KES"},
+              "demand_score": 9
+            }
+          ],
+          "services": [
+            {
+              "name": "Wiring & Rewiring",
+              "offline_available": true,
+              "avg_price": {"min": 2000, "max": 15000, "currency": "KES"},
+              "duration_hours": {"min": 3, "max": 12},
+              "urgency_level": "medium",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.25
+              }
+            },
+            {
+              "name": "Solar Panel Installation",
+              "offline_available": true,
+              "avg_price": {"min": 20000, "max": 150000, "currency": "KES"},
+              "duration_hours": {"min": 8, "max": 40},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": true,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-services",
+      "name": "Cleaning Services",
+      "icon": "🧹",
+      "offline_available": true,
+      "revenue_potential": "High",
+      "ml_priority": "high",
+      "subcategories": [
+        {
+          "id": "home-cleaning",
+          "name": "Home Cleaning",
+          "offline_available": true,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Professional Cleaner",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 200, "max": 600, "currency": "KES"},
+              "demand_score": 9
+            }
+          ],
+          "services": [
+            {
+              "name": "Regular House Cleaning",
+              "offline_available": true,
+              "avg_price": {"min": 1000, "max": 5000, "currency": "KES"},
+              "duration_hours": {"min": 2, "max": 6},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.85
+              }
+            },
+            {
+              "name": "Deep Cleaning",
+              "offline_available": true,
+              "avg_price": {"min": 3000, "max": 15000, "currency": "KES"},
+              "duration_hours": {"min": 4, "max": 12},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": true,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.60
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beauty-wellness",
+      "name": "Beauty & Wellness",
+      "icon": "💇",
+      "offline_available": true,
+      "revenue_potential": "High",
+      "ml_priority": "medium",
+      "subcategories": [
+        {
+          "id": "hair-styling",
+          "name": "Hair Styling",
+          "offline_available": true,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Professional Hairstylist",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 500, "max": 2000, "currency": "KES"},
+              "demand_score": 9
+            }
+          ],
+          "services": [
+            {
+              "name": "Haircut & Styling",
+              "offline_available": true,
+              "avg_price": {"min": 500, "max": 3000, "currency": "KES"},
+              "duration_hours": {"min": 0.5, "max": 2},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.80
+              }
+            },
+            {
+              "name": "Braiding & Weaving",
+              "offline_available": true,
+              "avg_price": {"min": 1000, "max": 10000, "currency": "KES"},
+              "duration_hours": {"min": 2, "max": 8},
+              "urgency_level": "low",
+              "ml_features": {
+                "seasonal_demand": true,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.70
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-support",
+      "name": "Tech Support & IT",
+      "icon": "💻",
+      "offline_available": false,
+      "revenue_potential": "High",
+      "ml_priority": "high",
+      "subcategories": [
+        {
+          "id": "phone-repair",
+          "name": "Phone Repair",
+          "offline_available": false,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Phone Technician",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 400, "max": 1500, "currency": "KES"},
+              "demand_score": 9
+            }
+          ],
+          "services": [
+            {
+              "name": "Screen Replacement",
+              "offline_available": false,
+              "avg_price": {"min": 1000, "max": 8000, "currency": "KES"},
+              "duration_hours": {"min": 0.5, "max": 2},
+              "urgency_level": "high",
+              "ml_features": {
+                "seasonal_demand": false,
+                "emergency_service": true,
+                "repeat_customer_rate": 0.40
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transportation",
+      "name": "Transportation & Delivery",
+      "icon": "🚚",
+      "offline_available": true,
+      "revenue_potential": "High",
+      "ml_priority": "high",
+      "subcategories": [
+        {
+          "id": "moving",
+          "name": "Moving & Relocation",
+          "offline_available": true,
+          "revenue_potential": "High",
+          "worker_types": [
+            {
+              "type": "Driver with Truck",
+              "certification_required": false,
+              "avg_hourly_rate": {"min": 500, "max": 2000, "currency": "KES"},
+              "demand_score": 9
+            }
+          ],
+          "services": [
+            {
+              "name": "House Moving",
+              "offline_available": true,
+              "avg_price": {"min": 5000, "max": 50000, "currency": "KES"},
+              "duration_hours": {"min": 4, "max": 16},
+              "urgency_level": "medium",
+              "ml_features": {
+                "seasonal_demand": true,
+                "emergency_service": false,
+                "repeat_customer_rate": 0.30
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ml_metadata": {
+    "version": "1.0",
+    "last_updated": "2024-03-03",
+    "total_categories": 5,
+    "ml_features_included": [
+      "seasonal_demand",
+      "emergency_service",
+      "repeat_customer_rate",
+      "demand_score",
+      "urgency_level",
+      "offline_availability",
+      "revenue_potential"
+    ],
+    "competitive_advantages": {
+      "smart_matching": "ML uses demand_score and repeat_customer_rate for optimal worker-job matching",
+      "dynamic_pricing": "Seasonal demand and urgency level enable smart pricing algorithms",
+      "fraud_detection": "Repeat customer rate patterns identify anomalies",
+      "offline_optimization": "Offline availability flags enable edge ML for offline-first features",
+      "worker_retention": "Demand score helps prioritize high-value worker categories"
+    }
+  }
+}
